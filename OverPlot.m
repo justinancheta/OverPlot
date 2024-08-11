@@ -12,6 +12,10 @@ classdef OverPlot < matlab.apps.AppBase
 %   [1] To append legends or make plots prettier send to workspace / figure
 %   file and modify from there. This is just the quick plotting script. 
 % 
+%   [2] Noote that for log data the log10(x) value should be used to
+%   correctly plot the data in a log plot. This has to due to how the
+%   transform between pixel placement and log10 values is performed.
+%
     % Properties that correspond to app components
     properties (Access = public)
         UIFigure              matlab.ui.Figure
